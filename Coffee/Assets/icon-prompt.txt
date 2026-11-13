@@ -1,0 +1,5 @@
+Generated with the built-in imagegen tool, with transparent_background=true.
+
+Use case: stylized-concept
+Asset type: macOS application icon for Coffee, a tiny keep-awake menu bar utility.
+Create one polished square 1024x1024 app icon: a warm ivory ceramic coffee cup with a curved handle, filled with rich espresso and two soft rising steam curls, on a deep espresso-brown rounded-square tile. Tasteful softly sculpted 3D forms, subtle glaze highlights, warm studio lighting, very restrained depth and shadows. Large simple centered silhouette that reads clearly at 32 pixels. Tile occupies about 88% of canvas, rounded macOS-style corners, transparent outer canvas. Cup and steam together occupy about 65% of tile height, ample breathing room. Front three-quarter view with handle on right. No saucer, no beans, no text, no letters, no watermark, no surrounding mockup. Deliver only the icon artwork.

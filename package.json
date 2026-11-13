@@ -1,0 +1,16 @@
+{
+  "name": "coffee",
+  "private": true,
+  "description": "Native macOS menu bar apps for keeping awake and tracking coding-agent usage",
+  "scripts": {
+    "build": "npm run build:coffee && npm run build:coffeeusage",
+    "build:coffee": "sh Coffee/build.sh",
+    "build:coffeeusage": "sh CoffeeUsage/build.sh",
+    "run:coffee": "npm run build:coffee && (pkill -x Coffee || true) && open Coffee/build/Coffee.app",
+    "run:coffeeusage": "npm run build:coffeeusage && (pkill -x CoffeeUsage || true) && open CoffeeUsage/build/CoffeeUsage.app",
+    "install:coffeeusage": "npm run build:coffeeusage && (pkill -x CoffeeUsage || true) && ditto CoffeeUsage/build/CoffeeUsage.app /Applications/CoffeeUsage.app && open /Applications/CoffeeUsage.app",
+    "dump:coffeeusage": "npm run build:coffeeusage && CoffeeUsage/build/CoffeeUsage.app/Contents/MacOS/CoffeeUsage --dump",
+    "resign:coffeeusage": "codesign --force --sign \"${CODESIGN_ID:--}\" --identifier local.usagebar CoffeeUsage/build/CoffeeUsage.app",
+    "clean": "rm -rf Coffee/build CoffeeUsage/build"
+  }
+}
